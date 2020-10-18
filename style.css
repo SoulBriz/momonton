@@ -27,28 +27,48 @@ body {
   text-align: center;
 } */
 
-.js-toDoForm {
-  position: relative;
-  top: -250px;
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.js-toDoForm {
+  position: relative;
+  top: -180px;
+}
+
+.js-form input,
 .js-toDoForm input {
-  width: 95%;
   font-size: 30px;
   padding: 5px 10px;
   border: none;
-  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0.8);
 }
 
+.js-toDoForm input {
+  font-size: 20px;
+}
+
+.js-form input:focus,
+.js-toDoForm input:focus {
+  outline: none;
+}
+
+.js-form input::placeholder,
 .js-toDoForm input::placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-size: 24px;
+  text-align: center;
 }
 
 .js-toDoList {
   position: relative;
   top: -200px;
+  left: -30px;
   list-style: none;
 }
 
@@ -56,7 +76,7 @@ body {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   color: red;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .big-box {
@@ -67,7 +87,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .js-clock {
@@ -105,7 +125,7 @@ body {
   position: relative;
   top: -220px;
   display: block;
-  font-size: 65px;
+  font-size: 50px;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
 }

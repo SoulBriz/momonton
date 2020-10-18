@@ -38,8 +38,7 @@ function loadName() {
   }
 }
 
-
-/*
+ /*
 function Greeting() {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
