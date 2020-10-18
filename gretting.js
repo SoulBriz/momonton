@@ -6,7 +6,7 @@ const form = document.querySelector(".js-form"),
 const USER_LS = "currentUser",
   SHOWING_CN = "showing";
 
-/*
+
 function saveName(text) {
   localStorage.setItem(USER_LS, text);
 }
@@ -37,8 +37,9 @@ function loadName() {
     paintGreeting(currentUser);
   }
 }
-*/
 
+
+/*
 function Greeting() {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
@@ -56,10 +57,11 @@ function Greeting() {
     greeting.innerText = "Good Evening";
   }
 }
+*/
 
 function init() {
-  //loadName();
-  Greeting();
+  loadName();
+  //Greeting();
 }
 
 init();
