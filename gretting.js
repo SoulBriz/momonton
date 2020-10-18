@@ -39,14 +39,15 @@ function loadName() {
 }
 
 
-/*
+
 function Greeting() {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
 
   const currentTime = time.innerText;
   time.addEventListener();
-
+  
+  /*
   if (currentTime >= "00:00:00" && currentTime < "06:00:00") {
     greeting.innerText = "Good Night";
   } else if (currentTime >= "06:00:00" && currentTime < "12:00:00") {
@@ -56,12 +57,13 @@ function Greeting() {
   } else if (currentTime >= "18:00:00" && currentTime <= "23:59:59") {
     greeting.innerText = "Good Evening";
   }
+  */
 }
-*/
+
 
 function init() {
   loadName();
-  //Greeting();
+  Greeting();
 }
 
 init();
